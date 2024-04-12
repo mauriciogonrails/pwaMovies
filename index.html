@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movies App</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="manifest" href="manifest.webmanifest">
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+
+    <div>
+        <header>
+            <div class="icon">
+                <div class="title">
+                    <img onclick="home()" src="icon.png" alt="not found" />
+                </div>
+                <h2 style="color: white;">App de filmes</h2>
+            </div>
+
+            <form id="form">
+                <span style="color: white; margin-right: 0.2em;">Pagina: </span>
+                <select name="options" id="options" onchange="changePage()">
+                    <option selected value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <input type="text" id="search" placeholder="Buscar" class="search" />
+                <button>Buscar</button>
+            </form>
+        </header>
+
+    </div>
+
+    <div>
+        <main id="main" class="box"></main>
+    </div>
+
+</body>
+
+</html>
